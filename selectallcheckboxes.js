@@ -93,13 +93,6 @@ if (document.getElementById("multiple_deletion")) {
 
 	// if the user clicks on the 'select_all_checkboxes'
 	select_all_checkboxes.addEventListener("click", function () {
-		/**
-		 * Reset the checked value to zero to prevent
-		 * the bug thats triggered when the user clicks
-		 * the select_all_checkboxes twice
-		 */
-		// checked = 0;
-
 		for (let i = 0; i < delete_checkbox.length; i++) {
 			if (select_all_checkboxes.checked === true) {
 				// Highlight all table rows
